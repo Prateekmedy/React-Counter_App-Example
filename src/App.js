@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-//import logo from './logo.svg';
 import './App.css';
 import NavBar from './components/navbar';
 import Counters from './components/counters';
@@ -74,7 +73,7 @@ class App extends Component {
                         onIncrement = {this.handleIncrement}/>} />
                     <Route  path="/about/:name" component={props => <About {...props} />} />
                     <Route  path="/contact" component={Contact} />
-                    <Route component={()=> <h1>This path us not defined</h1>} />
+                    <Route component={()=> <h1>This path is not defined</h1>} />
                 </Switch>
             </div>
         </Router>
